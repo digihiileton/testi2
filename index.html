@@ -40,34 +40,35 @@
   <script>
     const questions = [
       // HALU
-      { text: "Seuraan aktiivisesti matkailualan trendejä ja pohdin niiden vaikutuksia yritykseeni.", type: "halu", sub: "Nähdä ja tehdä" },
-      { text: "Minua motivoi ajatus siitä, että voin olla mukana rakentamassa matkailun tulevaisuutta.", type: "halu", sub: "Nähdä ja tehdä" },
-      { text: "Haluan tunnistaa heikkoja signaaleja ja ennakoida asiakkaiden muuttuvia tarpeita.", type: "halu", sub: "Nähdä ja tehdä" },
-      { text: "Olen valmis muuttamaan toimintatapoja, jos se tukee yrityksen tulevaisuutta.", type: "halu", sub: "Muuttua" },
-      { text: "Koen, että muutokset ovat mahdollisuus, eivät uhka.", type: "halu", sub: "Muuttua" },
-      { text: "Olen valmis luopumaan vanhoista käytännöistä, jos ne eivät enää palvele liiketoimintaa.", type: "halu", sub: "Muuttua" },
-      { text: "Olen valmis sijoittamaan aikaa, rahaa ja resursseja tulevaisuuden kannalta tärkeisiin uudistuksiin.", type: "halu", sub: "Panostaa" },
-      { text: "Näen investoinnit tulevaisuuteen pitkän aikavälin menestyksen edellytyksenä.", type: "halu", sub: "Panostaa" },
-      { text: "Haluan kehittää uusia tuotteita ja palveluja, vaikka niistä ei heti syntyisi tuottoa.", type: "halu", sub: "Panostaa" },
-      { text: "Olen halukas tekemään yhteistyötä muiden matkailutoimijoiden kanssa tulevaisuuden rakentamiseksi.", type: "halu", sub: "Yhteistyöhön" },
-      { text: "Arvostan yhteiskehittämistä ja asiakkaiden osallistamista palvelujen suunnitteluun.", type: "halu", sub: "Yhteistyöhön" },
-      { text: "Uskon, että tulevaisuudessa menestyminen vaatii vahvoja verkostoja ja kumppanuuksia.", type: "halu", sub: "Yhteistyöhön" },
+      { text: "Seuraan aktiivisesti matkailualan trendejä ja pohdin niiden vaikutuksia yritykseeni.", type: "halu", sub: "Visiointi" },
+      { text: "Minua motivoi ajatus siitä, että voin olla mukana rakentamassa matkailun tulevaisuutta.", type: "halu", sub: "Visiointi" },
+      { text: "Haluan tunnistaa heikkoja signaaleja ja ennakoida asiakkaiden muuttuvia tarpeita.", type: "halu", sub: "Visiointi" },
+      { text: "Olen valmis muuttamaan toimintatapoja, jos se tukee yrityksen tulevaisuutta.", type: "halu", sub: "Muutosvalmius" },
+      { text: "Koen, että muutokset ovat mahdollisuus, eivät uhka.", type: "halu", sub: "Muutosvalmius" },
+      { text: "Olen valmis luopumaan vanhoista käytännöistä, jos ne eivät enää palvele liiketoimintaa.", type: "halu", sub: "Muutosvalmius" },
+      { text: "Olen valmis sijoittamaan aikaa, rahaa ja resursseja tulevaisuuden kannalta tärkeisiin uudistuksiin.", type: "halu", sub: "Panostus" },
+      { text: "Näen investoinnit tulevaisuuteen pitkän aikavälin menestyksen edellytyksenä.", type: "halu", sub: "Panostus" },
+      { text: "Haluan kehittää uusia tuotteita ja palveluja, vaikka niistä ei heti syntyisi tuottoa.", type: "halu", sub: "Panostus" },
+      { text: "Olen halukas tekemään yhteistyötä muiden matkailutoimijoiden kanssa tulevaisuuden rakentamiseksi.", type: "halu", sub: "Yhteistyö" },
+      { text: "Arvostan yhteiskehittämistä ja asiakkaiden osallistamista palvelujen suunnitteluun.", type: "halu", sub: "Yhteistyö" },
+      { text: "Uskon, että tulevaisuudessa menestyminen vaatii vahvoja verkostoja ja kumppanuuksia.", type: "halu", sub: "Yhteistyö" },
 
       // KYKY
-      { text: "Yritykselläni on käytössä työkaluja tai prosesseja, joilla seuraamme alan kehitystä ja trendejä.", type: "kyky", sub: "Nähdä ja tehdä" },
-      { text: "Meillä on aikaa ja resursseja tulevaisuuden suunnitteluun ja ennakointiin.", type: "kyky", sub: "Nähdä ja tehdä" },
-      { text: "Meillä on osaamista analysoida markkinoiden muutoksia ja sovittaa toimintaa sen mukaan.", type: "kyky", sub: "Nähdä ja tehdä" },
-      { text: "Yrityksessämme on joustavat rakenteet ja prosessit, jotka mahdollistavat nopean suunnanmuutoksen.", type: "kyky", sub: "Muuttua" },
-      { text: "Pystymme kouluttamaan henkilöstöä tai hankkimaan osaamista muutostarpeiden tueksi.", type: "kyky", sub: "Muuttua" },
-      { text: "Olemme aiemminkin onnistuneet muuttamaan liiketoimintaamme muuttuvien olosuhteiden mukaan.", type: "kyky", sub: "Muuttua" },
-      { text: "Yritykselläni on riittävät taloudelliset resurssit tarvittaviin investointeihin.", type: "kyky", sub: "Panostaa" },
-      { text: "Meillä on osaamista ja kykyä hakea rahoitusta kehittämis- ja kasvuhankkeisiin.", type: "kyky", sub: "Panostaa" },
-      { text: "Yritykselläni on toimivat rakenteet, jotka tukevat kasvua ja uudistumista.", type: "kyky", sub: "Panostaa" },
-      { text: "Yritykselläni on valmiita verkostoja ja kumppaneita, joiden kanssa voimme kehittää toimintaa.", type: "kyky", sub: "Yhteistyöhön" },
-      { text: "Meillä on käytännöt, jotka tukevat avointa vuorovaikutusta muiden toimijoiden kanssa.", type: "kyky", sub: "Yhteistyöhön" },
-      { text: "Yrityksessäni on osaamista ja resursseja rakentaa ja ylläpitää kumppanuuksia.", type: "kyky", sub: "Yhteistyöhön" }
+      { text: "Yritykselläni on käytössä työkaluja tai prosesseja, joilla seuraamme alan kehitystä ja trendejä.", type: "kyky", sub: "Visiointi" },
+      { text: "Meillä on aikaa ja resursseja tulevaisuuden suunnitteluun ja ennakointiin.", type: "kyky", sub: "Visiointi" },
+      { text: "Meillä on osaamista analysoida markkinoiden muutoksia ja sovittaa toimintaa sen mukaan.", type: "kyky", sub: "Visiointi" },
+      { text: "Yrityksessämme on joustavat rakenteet ja prosessit, jotka mahdollistavat nopean suunnanmuutoksen.", type: "kyky", sub: "Muutosvalmius" },
+      { text: "Pystymme kouluttamaan henkilöstöä tai hankkimaan osaamista muutostarpeiden tueksi.", type: "kyky", sub: "Muutosvalmius" },
+      { text: "Olemme aiemminkin onnistuneet muuttamaan liiketoimintaamme muuttuvien olosuhteiden mukaan.", type: "kyky", sub: "Muutosvalmius" },
+      { text: "Yritykselläni on riittävät taloudelliset resurssit tarvittaviin investointeihin.", type: "kyky", sub: "Panostus" },
+      { text: "Meillä on osaamista ja kykyä hakea rahoitusta kehittämis- ja kasvuhankkeisiin.", type: "kyky", sub: "Panostus" },
+      { text: "Yritykselläni on toimivat rakenteet, jotka tukevat kasvua ja uudistumista.", type: "kyky", sub: "Panostus" },
+      { text: "Yritykselläni on valmiita verkostoja ja kumppaneita, joiden kanssa voimme kehittää toimintaa.", type: "kyky", sub: "Yhteistyö" },
+      { text: "Meillä on käytännöt, jotka tukevat avointa vuorovaikutusta muiden toimijoiden kanssa.", type: "kyky", sub: "Yhteistyö" },
+      { text: "Yrityksessäni on osaamista ja resursseja rakentaa ja ylläpitää kumppanuuksia.", type: "kyky", sub: "Yhteistyö" }
     ];
 
+    // sekoitus
     questions.sort(() => Math.random() - 0.5);
 
     const form = document.getElementById("testForm");
@@ -76,14 +77,13 @@
       div.className = "question";
       div.innerHTML = `<p>${i+1}. ${q.text}</p>`;
       const grid = document.createElement("div"); grid.className = "grid";
-      for (let j = 1; j <= 5; j++) {
+      for (let j=1;j<=5;j++) {
         grid.innerHTML += `<label><input type="radio" name="q${i}" value="${j}" data-type="${q.type}" data-sub="${q.sub}"> ${j}</label>`;
       }
       div.appendChild(grid); form.appendChild(div);
     });
 
-    let chartInstance = null; let radarInstance = null;
-
+    let chartInstance=null, radarInstance=null;
     function alue(arvo){ if(arvo<=3.3) return "matala"; if(arvo>=6.7) return "korkea"; return "keski"; }
 
     document.getElementById("submitBtn").addEventListener("click",()=>{
@@ -95,22 +95,27 @@
 
       const haluAvg=haluScore/12, kykyAvg=kykyScore/12;
       const haluNorm=((haluAvg-1)/4*10).toFixed(1), kykyNorm=((kykyAvg-1)/4*10).toFixed(1);
-      const haluOut=parseFloat(haluNorm).toFixed(1), kykyOut=parseFloat(kykyNorm).toFixed(1);
 
-      // Profiililogiikka (sama kuin ennen)
+      const haluOut=parseFloat(haluNorm).toFixed(1), kykyOut=parseFloat(kykyNorm).toFixed(1);
       const haluTaso=alue(haluNorm), kykyTaso=alue(kykyNorm);
-      let profile="... (profiilitekstit kuten aiemmassa versiossa) ...";
+
+      let profile="";
+      if (haluTaso==="korkea"&&kykyTaso==="korkea"){profile="<span class='highlight'>Olet strateginen edelläkävijä</span><br>Näet tulevaisuuden mahdollisuudet ja pystyt toteuttamaan ne.<br>Uskallat investoida, uudistaa ja kansainvälistyä.<br>Olet hyvässä asemassa nopeaan kasvuun ja suunnannäyttäjän rooliin.";}
+      else if(haluTaso==="korkea"&&kykyTaso==="matala"){profile="<span class='highlight'>Olet innostunut uudistuja</span><br>Erittäin motivoitunut, mutta resurssit ja osaaminen eivät vielä riitä.<br>Tarvitset tukea liiketoimintaosaamisen, rahoituksen ja verkostojen rakentamiseen.<br>Sinussa on potentiaalia kasvaa edelläkävijäksi.";}
+      else if(haluTaso==="matala"&&kykyTaso==="korkea"){profile="<span class='highlight'>Olet vakaa kehittäjä</span><br>Kyvykäs ja hyvin resursoitu, mutta etenet harkiten ja vältät riskejä.<br>Hyvä perusta, mutta tarvitset usein ulkoisia kannustimia aktivoituaksesi uusiin avauksiin.";}
+      else if(haluTaso==="matala"&&kykyTaso==="matala"){profile="<span class='highlight'>Olet varautunut säilyttäjä</span><br>Keskityt pitämään nykytoiminnan vakaana ja riskittömänä.<br>Saatat suhtautua muutoksiin varauksella tai kokea ne uhkana.<br>Tarvitset aikaa ja tukea, jotta uskallat lähteä liikkeelle.";}
+      else{profile="<span class='highlight'>Olet tasapainoinen, mutta hakeva</span><br>Sinulla ei ole selkeitä heikkouksia, mutta et myöskään voimakkaita vahvuuksia.<br>Tarvitset suuntaa ja strategisia päätöksiä kehityspolkusi kirkastamiseksi.";}
 
       document.getElementById("result").style.display="block";
       document.getElementById("profileText").innerHTML=`<p><strong>Pisteesi:</strong> Muutoshalu = ${haluOut}/10, Muutoskyky = ${kykyOut}/10</p><p>${profile}</p>`;
 
-      // Radar chart data
+      // Radar chart
       function calc(type,sub){
         const relevant=Array.from(answers).filter(a=>a.dataset.type===type&&a.dataset.sub===sub);
         const avg=relevant.reduce((s,a)=>s+ +a.value,0)/relevant.length;
         return ((avg-1)/4*10).toFixed(1);
       }
-      const labels=["Nähdä ja tehdä","Muuttua","Panostaa","Yhteistyöhön"];
+      const labels=["Visiointi","Muutosvalmius","Panostus","Yhteistyö"];
       const haluData=labels.map(l=>calc("halu",l));
       const kykyData=labels.map(l=>calc("kyky",l));
 
@@ -128,4 +133,5 @@
   </script>
 </body>
 </html>
+
 
